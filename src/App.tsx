@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TodoPage from './feature/todo/presentation/todo_page';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          work is started 
+          <TodoPage></TodoPage>
         </a>
       </header>
     </div>
