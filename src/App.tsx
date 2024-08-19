@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import  { useState, Dispatch } from 'react';
 import './App.css';
-import TodoPage from './feature/todo/presentation/todo_page';
+import { default as TodoPage } from './feature/todo/presentation/todo_page';
+
+
+
 
 function App() {
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <TodoPage></TodoPage>
-        </a>
-      </header>
+      <TodoPage currentContent="so I caa pass property using props" unused={null}></TodoPage>
     </div>
   );
 }
