@@ -1,9 +1,10 @@
 import React from 'react';
-import  { useState, Dispatch } from 'react';
 import './App.css';
 import { default as TodoPage } from './feature/todo/presentation/todo_page';
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 
+const theme = createTheme();
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <TodoPage currentContent="so I caa pass property using props" unused={null}></TodoPage>
+      <TodoPage></TodoPage>
     </div>
   );
 }
